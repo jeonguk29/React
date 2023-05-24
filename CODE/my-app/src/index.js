@@ -12,6 +12,7 @@ import NotificationList from './chapter_06/NotificationList';
 import Accommodate from './chapter_07/Accommodate';
 import ConfirmButton2 from './chapter_08/ConfirmButton2';
 import LandingPage from './chapter_09/LandingPage';
+import AttendanceBook from './chapter_10/AttendanceBook';
 
 import Counter from './test/Counter';
 import Counter2 from './test/Counter2';
@@ -19,7 +20,7 @@ import Counter2 from './test/Counter2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LandingPage />
+    <AttendanceBook />
   </React.StrictMode>
 );
 // If you want to start measuring performance in your app, pass a function
