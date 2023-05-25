@@ -31,6 +31,7 @@ function AttendanceBook(props) {
             
             {students.map((student, index) => {
                 return <li key={student.id}>{student.name}</li>;
+                // <li key={index}}>{student.name}</li>; 키를 인덱스로 변경하는 코드
             })}
         </ul>
     );

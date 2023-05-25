@@ -1,6 +1,7 @@
 import React from "react";
 import Comment from "./Comment";
 
+/* 댓글 객체 생성 */
 const comments = [
     {
         name: "이인제",
@@ -16,16 +17,19 @@ const comments = [
     },
 ];
 
+
+/* 각 댓글 객체에 대해서  Comment 컴포넌트를 리턴하도록 작성 */
 function CommentList(props) {
-    return (
-        <div>
-            {comments.map((comment) => {
-                return (
-                    <Comment name={comment.name} comment={comment.comment} />
-                );
-            })}
-        </div>
-    );
+  return (
+    <div>
+      {comments.map((comment) => {
+        // comments 배열을 map 함수로 순회하며 각각의 comment에 대한 정보를 가져온다.
+        return (
+          <Comment name={comment.name} comment={comment.comment} /> // Comment 컴포넌트에 comment 정보를 props로 전달한다.
+        );
+      })}
+    </div>
+  );
 }
 
 export default CommentList;
